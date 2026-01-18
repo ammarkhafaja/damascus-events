@@ -948,9 +948,9 @@ input, textarea {
 }
 
 .event_category {
-    padding: 10px 20px;
-    background: var(--accent);
-    color: #fff;
+    padding: 5px 10px;
+    background: #ccc !important;
+    color: #333 !important;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -958,7 +958,7 @@ input, textarea {
 }
 
 .event_category:hover {
-    background: var(--accent);
+    background: #aaa !important;
 }
 
 .section_title {
