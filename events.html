@@ -46,163 +46,187 @@
 
             <!-- Search & Filter -->
             <section id="filter_search_form">
-                <form id="form_search">
-                    <fieldset>
-                        <legend>Search & Filter Events</legend>
-                        <label for="search_input">Search:</label>
-                        <input type="search" id="search_input" placeholder="Search events...">
-                        <input type="date" title="Search by date">
-                        <select title="Event Category">
-                        <option hidden selected>Event Category</option>
-                        <option>Cultural Events</option>
-                        <option>Sports Events</option>
-                        <option>Musical Events</option>
-                        <option>Familial Events</option>
-                    </select>
+                <div class="card">
+                    <div class="card-body">
+                        <form id="form_search">
+                            <fieldset>
+                                <legend>Search & Filter Events</legend>
+                                <label for="search_input">Search:</label>
+                                <input type="search" id="search_input" placeholder="Search events...">
+                                <input type="date" title="Search by date">
+                                <select title="Event Category">
+                                <option hidden selected>Event Category</option>
+                                <option>Cultural Events</option>
+                                <option>Sports Events</option>
+                                <option>Musical Events</option>
+                                <option>Familial Events</option>
+                            </select>
 
-                        <select title="Event Location">
-                        <option hidden selected>Event Location</option>
-                        <option value="bab_touma">Bab Touma</option>
-                        <option value="Damascus_center">Damascus Center</option>
-                        <option value="mazzeh">Mazzeh</option>
-                        <option value="ref_damas">Ref damascus</option>
-                    </select>
+                                <select title="Event Location">
+                                <option hidden selected>Event Location</option>
+                                <option value="bab_touma">Bab Touma</option>
+                                <option value="Damascus_center">Damascus Center</option>
+                                <option value="mazzeh">Mazzeh</option>
+                                <option value="ref_damas">Ref damascus</option>
+                            </select>
 
-                        <input type="submit" value="Search">
-                        <button type="button" class="clear-filters" value="Clear Filters">Clear Filters</button>
-                    </fieldset>
-                </form>
+                                <input type="submit" value="Search">
+                                <button type="button" class="clear-filters" value="Clear Filters">Clear Filters</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
             </section>
 
             <!-- Events List -->
             <section id="events_container">
 
                 <!-- Event 1 -->
-                <article class="event">
-                    <img src="img/event/Dawn_of_Freedom.jpg" class="image_of_map" alt="Dawn of Freedom Carnival" loading="lazy">
-                    <h3>Dawn of Freedom Carnival</h3>
-                    <p class="event_time">08/12/2025 – 03:00 PM → 06:00 PM</p>
-                    <p class="event_location mazzeh">Abbasiyin Square → Umayyad Square</p>
-                    <p class="event_category">Cultural Event</p>
-                    <p class="event_description">
-                        A massive public parade featuring musical bands, decorated floats, and national celebration.
-                    </p>
-                    <a href="event.html#event_one_details" class="event_more">More Details...</a>
+                <article class="card event h-100">
+                    <img src="img/event/Dawn_of_Freedom.jpg" class="card-img-top image_of_map" alt="Dawn of Freedom Carnival" loading="lazy">
+                    <div class="card-body">
+                        <h3 class="card-title">Dawn of Freedom Carnival</h3>
+                        <p class="event_time">08/12/2025 – 03:00 PM → 06:00 PM</p>
+                        <p class="event_location mazzeh">Abbasiyin Square → Umayyad Square</p>
+                        <p class="event_category">Cultural Event</p>
+                        <p class="event_description card-text">
+                            A massive public parade featuring musical bands, decorated floats, and national celebration.
+                        </p>
+                        <a href="event.html#event_one_details" class="btn btn-primary event_more">More Details...</a>
+                    </div>
                 </article>
 
                 <!-- Event 2 -->
-                <article class="event">
-                    <img src="img/event/opera_stage_performance.jpg" class="image_of_map" alt="One Syria Operetta" loading="lazy">
-                    <h3>One Syria Operetta</h3>
-                    <p class="event_time">08/12/2025 – 08:00 PM → 10:30 PM</p>
-                    <p class="event_location mazzeh">Damascus Opera House</p>
-                    <p class="event_category">Musical Event</p>
-                    <p class="event_description">
-                        Epic artistic work blending orchestral music with contemporary dance.
-                    </p>
-                    <a href="event.html#event_two_details" class="event_more">More Details...</a>
+                <article class="card event h-100">
+                    <img src="img/event/opera_stage_performance.jpg" class="card-img-top image_of_map" alt="One Syria Operetta" loading="lazy">
+                    <div class="card-body">
+                        <h3 class="card-title">One Syria Operetta</h3>
+                        <p class="event_time">08/12/2025 – 08:00 PM → 10:30 PM</p>
+                        <p class="event_location mazzeh">Damascus Opera House</p>
+                        <p class="event_category">Musical Event</p>
+                        <p class="event_description card-text">
+                            Epic artistic work blending orchestral music with contemporary dance.
+                        </p>
+                        <a href="event.html#event_two_details" class="btn btn-primary event_more">More Details...</a>
+                    </div>
                 </article>
 
                 <!-- Event 3 -->
-                <article class="event">
-                    <img src="img/event/The_Lit_Tree.jpg" class="image_of_map" alt="Lighting of the Liberation and Christmas Tree" loading="lazy">
-                    <h3>Lighting of Liberation & Christmas Tree</h3>
-                    <p class="event_time">15/12/2025 – 06:00 PM → 08:00 PM</p>
-                    <p class="event_location bab_touma">Bab Touma Square</p>
-                    <p class="event_category">Familial Event</p>
-                    <p class="event_description">
-                        Lighting the largest Christmas tree with revolutionary colors and community celebration.
-                    </p>
-                    <a href="event.html#event_three_details" class="event_more">More Details...</a>
+                <article class="card event h-100">
+                    <img src="img/event/The_Lit_Tree.jpg" class="card-img-top image_of_map" alt="Lighting of the Liberation and Christmas Tree" loading="lazy">
+                    <div class="card-body">
+                        <h3 class="card-title">Lighting of Liberation & Christmas Tree</h3>
+                        <p class="event_time">15/12/2025 – 06:00 PM → 08:00 PM</p>
+                        <p class="event_location bab_touma">Bab Touma Square</p>
+                        <p class="event_category">Familial Event</p>
+                        <p class="event_description card-text">
+                            Lighting the largest Christmas tree with revolutionary colors and community celebration.
+                        </p>
+                        <a href="event.html#event_three_details" class="btn btn-primary event_more">More Details...</a>
+                    </div>
                 </article>
                 <!-- Event 4 -->
-                <article class="event">
-                    <img src="img/event/Traditional_Dishes.jpg" class="image_of_map" alt="Bite of Freedom Festival" loading="lazy">
-                    <h3>Bite of Freedom Festival</h3>
-                    <p class="event_time">18/12/2025 – 12:00 PM → 22/12/2025</p>
-                    <p class="event_location Damascus_center">AL mayssat Sq</p>
-                    <p class="event_category">Cultural Event</p>
-                    <p class="event_description">
-                        Open market celebrating Syrian cuisine from Aleppo to Daraa.
-                    </p>
-                    <a href="event.html#event_four_details" class="event_more">More Details...</a>
+                <article class="card event h-100">
+                    <img src="img/event/Traditional_Dishes.jpg" class="card-img-top image_of_map" alt="Bite of Freedom Festival" loading="lazy">
+                    <div class="card-body">
+                        <h3 class="card-title">Bite of Freedom Festival</h3>
+                        <p class="event_time">18/12/2025 – 12:00 PM → 22/12/2025</p>
+                        <p class="event_location Damascus_center">AL mayssat Sq</p>
+                        <p class="event_category">Cultural Event</p>
+                        <p class="event_description card-text">
+                            Open market celebrating Syrian cuisine from Aleppo to Daraa.
+                        </p>
+                        <a href="event.html#event_four_details" class="btn btn-primary event_more">More Details...</a>
+                    </div>
                 </article>
 
                 <!-- Event 5 -->
-                <article class="event">
-                    <img src="img/event/Exhibition_Halls.jpg" class="image_of_map" alt="Detainees' Memory Exhibition" loading="lazy">
-                    <h3>Detainees' Memory and Hope Exhibition</h3>
-                    <p class="event_time">26/12/2025 – 10:00 AM → 30/12/2025</p>
-                    <p class="event_location mazzeh">Mezzeh Prison Museum</p>
-                    <p class="event_category">Cultural Event</p>
-                    <p class="event_description">
-                        Art exhibition documenting detainees’ stories and sacrifices.
-                    </p>
-                    <a href="event.html#event_five_details" class="event_more">More Details...</a>
+                <article class="card event h-100">
+                    <img src="img/event/Exhibition_Halls.jpg" class="card-img-top image_of_map" alt="Detainees' Memory Exhibition" loading="lazy">
+                    <div class="card-body">
+                        <h3 class="card-title">Detainees' Memory and Hope Exhibition</h3>
+                        <p class="event_time">26/12/2025 – 10:00 AM → 30/12/2025</p>
+                        <p class="event_location mazzeh">Mezzeh Prison Museum</p>
+                        <p class="event_category">Cultural Event</p>
+                        <p class="event_description card-text">
+                            Art exhibition documenting detainees' stories and sacrifices.
+                        </p>
+                        <a href="event.html#event_five_details" class="btn btn-primary event_more">More Details...</a>
+                    </div>
                 </article>
 
                 <!-- Event 6 -->
-                <article class="event">
-                    <img src="img/event/marathon_runners.jpg" class="image_of_map" alt="New Syria Marathon" loading="lazy">
-                    <h3>New Syria Marathon</h3>
-                    <p class="event_time">28/12/2025 – 08:00 AM → 12:00 PM</p>
-                    <p class="event_location ref_damas">Damascus Airport Road</p>
-                    <p class="event_category">Sports Event</p>
-                    <p class="event_description">
-                        A mass sporting event symbolizing hope, vitality, and freedom.
-                    </p>
-                    <a href="event.html#event_six_details" class="event_more">More Details...</a>
+                <article class="card event h-100">
+                    <img src="img/event/marathon_runners.jpg" class="card-img-top image_of_map" alt="New Syria Marathon" loading="lazy">
+                    <div class="card-body">
+                        <h3 class="card-title">New Syria Marathon</h3>
+                        <p class="event_time">28/12/2025 – 08:00 AM → 12:00 PM</p>
+                        <p class="event_location ref_damas">Damascus Airport Road</p>
+                        <p class="event_category">Sports Event</p>
+                        <p class="event_description card-text">
+                            A mass sporting event symbolizing hope, vitality, and freedom.
+                        </p>
+                        <a href="event.html#event_six_details" class="btn btn-primary event_more">More Details...</a>
+                    </div>
                 </article>
                 <!-- Event 7 -->
-                <article class="event">
-                    <img src="img/event/Poetry_Podium.jpg" class="image_of_map" alt="Poems from Exile Evening" loading="lazy">
-                    <h3>Poems from Exile Evening</h3>
-                    <p class="event_time">30/12/2025 – 07:00 PM → 09:00 PM</p>
-                    <p class="event_location Damascus_center">Tekkiye Suleymaniye</p>
-                    <p class="event_category">Cultural Event</p>
-                    <p class="event_description">
-                        Literary evening gathering Syrian poets returning from exile.
-                    </p>
-                    <a href="event.html#event_seven_details" class="event_more">More Details...</a>
+                <article class="card event h-100">
+                    <img src="img/event/Poetry_Podium.jpg" class="card-img-top image_of_map" alt="Poems from Exile Evening" loading="lazy">
+                    <div class="card-body">
+                        <h3 class="card-title">Poems from Exile Evening</h3>
+                        <p class="event_time">30/12/2025 – 07:00 PM → 09:00 PM</p>
+                        <p class="event_location Damascus_center">Tekkiye Suleymaniye</p>
+                        <p class="event_category">Cultural Event</p>
+                        <p class="event_description card-text">
+                            Literary evening gathering Syrian poets returning from exile.
+                        </p>
+                        <a href="event.html#event_seven_details" class="btn btn-primary event_more">More Details...</a>
+                    </div>
                 </article>
 
                 <!-- Event 8 -->
-                <article class="event">
-                    <img src="img/event/Fireworks.jpg" class="image_of_map" alt="Syrian New Year Celebration" loading="lazy">
-                    <h3>Syrian New Year Celebration</h3>
-                    <p class="event_time">31/12/2025 – 09:00 PM → 01/01/2026</p>
-                    <p class="event_location ref_damas">Mount Qasioun Summit</p>
-                    <p class="event_category">Familial Event</p>
-                    <p class="event_description">
-                        Massive fireworks covering Damascus celebrating the first free New Year.
-                    </p>
-                    <a href="event.html#event_eight_details" class="event_more">More Details...</a>
+                <article class="card event h-100">
+                    <img src="img/event/Fireworks.jpg" class="card-img-top image_of_map" alt="Syrian New Year Celebration" loading="lazy">
+                    <div class="card-body">
+                        <h3 class="card-title">Syrian New Year Celebration</h3>
+                        <p class="event_time">31/12/2025 – 09:00 PM → 01/01/2026</p>
+                        <p class="event_location ref_damas">Mount Qasioun Summit</p>
+                        <p class="event_category">Familial Event</p>
+                        <p class="event_description card-text">
+                            Massive fireworks covering Damascus celebrating the first free New Year.
+                        </p>
+                        <a href="event.html#event_eight_details" class="btn btn-primary event_more">More Details...</a>
+                    </div>
                 </article>
 
                 <!-- Event 9 -->
-                <article class="event">
-                    <img src="img/event/Film_Screening.jpg" class="image_of_map" alt="Freedom Amateur Cinema Festival" loading="lazy">
-                    <h3>Freedom Amateur Cinema Festival</h3>
-                    <p class="event_time">12/12/2025 → 14/12/2025</p>
-                    <p class="event_location Damascus_center">Al-Kindi Cinema & Al-Mutanabbi Street</p>
-                    <p class="event_category">Cultural Event</p>
-                    <p class="event_description">
-                        Screening revolutionary short films shot by Syrian youth.
-                    </p>
-                    <a href="event.html#event_nine_details" class="event_more">More Details...</a>
+                <article class="card event h-100">
+                    <img src="img/event/Film_Screening.jpg" class="card-img-top image_of_map" alt="Freedom Amateur Cinema Festival" loading="lazy">
+                    <div class="card-body">
+                        <h3 class="card-title">Freedom Amateur Cinema Festival</h3>
+                        <p class="event_time">12/12/2025 → 14/12/2025</p>
+                        <p class="event_location Damascus_center">Al-Kindi Cinema & Al-Mutanabbi Street</p>
+                        <p class="event_category">Cultural Event</p>
+                        <p class="event_description card-text">
+                            Screening revolutionary short films shot by Syrian youth.
+                        </p>
+                        <a href="event.html#event_nine_details" class="btn btn-primary event_more">More Details...</a>
+                    </div>
                 </article>
 
                 <!-- Event 10 -->
-                <article class="event">
-                    <img src="img/event/Graffiti_Art.jpg" class="image_of_map" alt="Victory Mural Painting" loading="lazy">
-                    <h3>Victory Mural Painting</h3>
-                    <p class="event_time">20/12/2025 – 09:00 AM → 21/12/2025</p>
-                    <p class="event_location mazzeh">Umayyad Square Tunnel</p>
-                    <p class="event_category">Cultural Event</p>
-                    <p class="event_description">
-                        Syrian graffiti artists painting murals symbolizing liberation.
-                    </p>
-                    <a href="event.html#event_ten_details" class="event_more">More Details...</a>
+                <article class="card event h-100">
+                    <img src="img/event/Graffiti_Art.jpg" class="card-img-top image_of_map" alt="Victory Mural Painting" loading="lazy">
+                    <div class="card-body">
+                        <h3 class="card-title">Victory Mural Painting</h3>
+                        <p class="event_time">20/12/2025 – 09:00 AM → 21/12/2025</p>
+                        <p class="event_location mazzeh">Umayyad Square Tunnel</p>
+                        <p class="event_category">Cultural Event</p>
+                        <p class="event_description card-text">
+                            Syrian graffiti artists painting murals symbolizing liberation.
+                        </p>
+                        <a href="event.html#event_ten_details" class="btn btn-primary event_more">More Details...</a>
+                    </div>
                 </article>
 
 
