@@ -1,6 +1,4 @@
 $(document).ready(function() {
-    // Mobile nav toggle - Bootstrap navbar handles this automatically, no need for custom implementation
-    // Disabled: Bootstrap 5.3.2 navbar-toggler handles responsive navigation
 
     // Contact form validation
     if ($('#contact-form').length) {
@@ -85,7 +83,7 @@ $(document).ready(function() {
             const $existingError = $field.siblings(`#${errorId}, .field-error`);
             $existingError.remove();
 
-            // Update field state and ARIA attributes
+            // Update field state
             if (isValid) {
                 $field.removeClass('error').addClass('valid');
                 $field.attr('aria-invalid', 'false');
@@ -132,7 +130,7 @@ $(document).ready(function() {
             const $submitBtn = $form.find('input[type="submit"]');
             $submitBtn.prop('disabled', !isValid);
             
-            // Update submit button ARIA state
+            // Update submit button
             if (isValid) {
                 $submitBtn.attr('aria-label', 'Submit form');
             } else {
@@ -146,7 +144,6 @@ $(document).ready(function() {
             
             const $submitBtn = $form.find('input[type="submit"]');
             if (!$submitBtn.prop('disabled')) {
-                // All fields are valid, sanitize and prepare data
                 const data = {};
                 Object.keys(fields).forEach(name => {
                     const $field = $form.find(`[name="${name}"]`);
@@ -156,11 +153,9 @@ $(document).ready(function() {
                 });
                 console.log('Form data:', data);
                 
-                // Here you would typically send the data to a server
-                // For now, we'll just log it
+                // For submit, we'll just log it
                 alert('Form submitted successfully! (Check console for data)');
             } else {
-                // Focus first invalid field
                 const $firstError = $form.find('.error').first();
                 if ($firstError.length) {
                     $firstError.focus();
@@ -177,9 +172,6 @@ $(document).ready(function() {
                 checkFormValidity();
             }, 0);
         });
-
-        // Don't validate on page load - only validate on user interaction
-        // Removed: checkFormValidity();
     }
 
     // Events page AJAX filtering
@@ -208,7 +200,7 @@ $(document).ready(function() {
                     // Search filter
                     const matchSearch = !search || text.includes(search);
                     
-                    // Category filter - normalize both values for comparison
+                    // Category filter
                     let matchCat = true;
                     if (category && category !== 'Event Category') {
                         // Map select values to event category text format
@@ -263,10 +255,10 @@ $(document).ready(function() {
         });
     }
 
-    // Back to Top Button functionality
+    // Back to Top Button
     const $backToTopBtn = $('#backToTop');
     
-    // Show/hide back to top button based on scroll position
+    // Show/hide back to top button based on scroll
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > 300) {
             $backToTopBtn.addClass('show');

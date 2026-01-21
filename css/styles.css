@@ -267,7 +267,7 @@ legend {
 /* form group flex styling */
 
 .form-group {
-    flex: 1 1 220px;
+    flex: 1 1 0;
     min-width: 220px;
     margin-bottom: 12px;
 }
@@ -988,6 +988,7 @@ footer {
     text-align: center;
 }
 
+/* Footer links states */
 footer a,
 footer a:visited,
 footer a:hover,
@@ -996,6 +997,7 @@ footer a:active {
     text-decoration: none;
 }
 
+/* Give some opacity effect For footer social and contact links */
 footer .contact-tools a:hover,
 footer .social-links a:hover {
     opacity: 0.8;
